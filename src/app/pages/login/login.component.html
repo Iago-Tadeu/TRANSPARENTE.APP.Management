@@ -1,54 +1,14 @@
-<!-- <div class="login-container">
-    <h2>Entrar</h2>
-    <form action="#">
-        <input type="text" placeholder="Email" required>
-        <input type="password" placeholder="Senha" required>
-        <button routerLink="https://www.google.com">Esqueceu a senha?</button>
-        <input type="submit" value="Entrar">
-    </form> -->
-
-
-
-
-<!-- <app-toolbar /> -->
-  <!-- <router-outlet></router-outlet> -->
-
-<!-- <div class="content-login">
-
-    <form class="content-form" formGroup="loginForm">
-        <div>
-            <div>
-                <input class="input-login" placeholder="email" formControlName="email" />
-            </div>
-            <div class="error-message"
-                ngIf="loginForm.get('email')?.errors?.required && loginForm.get('email')?.touched?">
-                Required field!
-            </div>
-            <div class="error-message" ngIf="loginForm.get('email')?.errors?.email && loginForm.get('email')?.touched?">
-                Email format is invalid!
-            </div>
-            <div>
-                <input class="input-login" type="password" placeholder="email" formControlName="email" />
-            </div>
-            <div class="error-message"
-                ngIf="loginForm.get('password')?.errors?.required && loginForm.get('password')?.touched?">
-                Obrigatory field!
-            </div>
-        </div>
-    </form>
-</div> -->
-
-
 <div class="login-container">
     <h2>Entrar</h2>
-
-    <form action="#">
-        <input type="text" placeholder="Usuário" required>
-        <input type="password" placeholder="Senha" required>
+    <!-- <form action="#"> -->
+        <form class="content-form" [formGroup]="loginForm"(submit)="submitLogin()">
+        <input type="email" placeholder="Usuário" required formControlName="email">
+        <input type="password" placeholder="Senha" required formControlName="password">
+        <!-- <input class="input-login" placeholder="email" formControlName="email"/> -->
         <input type="submit" value="Entrar">
     </form>
     <br>
-    <div class="input-login"></div>
+    <!-- <div class="input-login"></div> -->
     <!-- <span><a routerLink="/home">Redirect</a></span> -->
 </div>
 <div>

@@ -12,7 +12,6 @@
         width: 45%;
         height: 350px;
         transform-box: all 0.5s ease-in-out;
-
     }
 
     .content-form:hover {
@@ -20,17 +19,19 @@
     }
 }
 
-.input-login {
-    background-color: #f6f6f6;
-    border: none;
-    color: #0d0d0d;
-    padding: 15px 0px;
-    text-align: center;
-    font-size: 16px;
-    margin: 5px;
-    width: 90%;
-    transition: all 0.5s ease-in-out;
-}
+// .input-login {
+//     background-color: #f6f6f6;
+//     border: none;
+//     color: #0d0d0d;
+//     padding: 15px 0px;
+//     text-align: center;
+//     font-size: 16px;
+//     margin: 5px;
+//     width: 90%;
+//     transition: all 0.5s ease-in-out;
+//     border: 2px solid #f6f6f6;
+//     border-radius: 5px;
+// }
 
 body {
     margin: 0;
@@ -54,13 +55,13 @@ body {
     margin-bottom: 20px;
 }
 
-.login-container input[type="text"],
+.login-container input[type="email"],
 .login-container input[type="password"] {
     width: calc(100% - 40px);
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 .login-container input[type="submit"] {
