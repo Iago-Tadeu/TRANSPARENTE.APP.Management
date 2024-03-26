@@ -11,6 +11,6 @@ export class LoginService {
 
     private readonly baseUrl = environment["endPoint"];
     loginUser(object: LoginModel) {
-        return this.httpClient.post<string>("${this.baseUrl}/apiName42/", object);
+        return this.httpClient.post<any>("${this.baseUrl}/apiName42/", JSON.stringify(object));
     }
 }
