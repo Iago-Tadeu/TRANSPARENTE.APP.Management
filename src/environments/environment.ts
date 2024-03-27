@@ -1,6 +1,6 @@
 export const environment = {
     production: false,
-    endPoint: 'https://localhost:1234/api',
-    baseAPIUrl: 'https://localhost:5678/api'
+    endPoint: 'http://localhost:3000',
+    baseAPIUrl: 'http://localhost:5678/api'
     // Adicionar url correta do servidor
 }

@@ -1,32 +1,12 @@
 <div class="login-container">
     <h2>Entrar</h2>
-    <!-- <form action="#"> -->
         <form class="content-form" [formGroup]="loginForm"(submit)="submitLogin()">
         <input type="email" placeholder="Usuário" required formControlName="email">
         <input type="password" placeholder="Senha" required formControlName="password">
-        <!-- <input class="input-login" placeholder="email" formControlName="email"/> -->
         <input type="submit" value="Entrar">
     </form>
     <br>
-    <!-- <div class="input-login"></div> -->
-    <!-- <span><a routerLink="/home">Redirect</a></span> -->
-</div>
-<div>
-    <!-- <span class="nav-item"><a routerLink="/home"> -->
-        <!-- <button  routerLink="/home" queryParams="{debug: true}" fragment="education">
-            link to user component
-        </button>
-            <button (click)="onClick();">Registros</button> -->
-        <!-- </a> -->
-        <!-- </span> -->
-
-</div>
-
-
-
-
-
+    <span><a type="button" (click)="goToUrl()">Eu não possuo uma conta</a></span>
+    <br>
     <button routerLink="/home">Continuar</button>
-    
-    <!-- <button routerLink="https://www.google.com">Eu não possuo uma conta</button>
-</div> -->
+</div>
