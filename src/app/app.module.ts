@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
+import { AppGlobals } from './app.globals';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormComponent } from './pages/form/form.component';
@@ -27,7 +27,7 @@ import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/
     HttpClientModule,
   ],
   providers: [
-    
+    AppGlobals,
     provideClientHydration(),
     provideHttpClient(),
     provideHttpClient(withFetch()),

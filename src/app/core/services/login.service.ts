@@ -16,11 +16,11 @@ export class LoginService {
 
 
   loginUser() {
-    console.log("TESTE");
-    const params = {
-      "email": "hercules.nakai@42we.tech",
-      "password": "231623712387"
-    }
+    // console.log("TESTE");
+    // const params = {
+    //   "email": "hercules.nakai@42we.tech",
+    //   "password": "231623712387"
+    // }
 
     // this.httpClient.get<any>("https://webhook.site/7f601704-f9b8-43bd-85e1-16294b13f5b2/get");
 

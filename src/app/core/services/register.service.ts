@@ -12,5 +12,6 @@ export class RegisterService {
     private readonly baseUrl = environment["endPoint"];
     loginUser(object: UserModel) {
         return this.httpClient.post<any>("${this.baseUrl}/apiName42/", JSON.stringify(object));
+        // this.httpClient.post('http://192.168.18.20:5000/api/auth/register', JSON.stringify(customer), this._global.httpOptions).subscribe((user);
     }
 }
