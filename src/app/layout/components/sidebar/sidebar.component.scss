@@ -4,28 +4,27 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #333;
-    padding-top: 20px;
-  
+    background-color: #FFFFFF;
+    padding-top: 20px;  
     ul {
-      list-style-type: none;
+      list-style-type: circle;
       padding: 0;
       margin: 0;
   
       li {
         a {
           display: block;
-          color: #fff;
+          color: #0A4D70;
           text-decoration: none;
           padding: 10px 20px;
           transition: background-color 0.3s ease;
   
           &:hover {
-            background-color: #555;
+            background-color: #F0F9FF;
           }
   
           &.active {
-            background-color: #666;
+            background-color: #F0F9FF;
           }
         }
       }

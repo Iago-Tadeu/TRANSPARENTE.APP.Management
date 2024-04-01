@@ -14,21 +14,22 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { DashboardModule } from './layout/components/dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponent,
+    // FormComponent,
     LoginComponent,
-    HomeComponent,
-    RegisterComponent,
+    // HomeComponent,
+    // RegisterComponent,
     ForgotPasswordComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CommonModule,
+    DashboardModule,
     ReactiveFormsModule,
     HttpClientModule,
   ],

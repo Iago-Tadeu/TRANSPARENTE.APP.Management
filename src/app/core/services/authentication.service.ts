@@ -21,6 +21,7 @@ export class AuthenticationService {
         user => {
           console.log(user);
           this.router.navigate(["/home"]);
+          // _user = user.data.["token"];
           // return user;
           // localStorage.setItem("currentUser", JSON.stringify(user));
           // localStorage.setItem("Authorization", `${user.token}`);
