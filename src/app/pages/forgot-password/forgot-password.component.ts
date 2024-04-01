@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { LoginModel } from '../../core/models/login-model';
-import { LoginService } from '../../core/services/login.service';
 import { AuthenticationService } from '../../core/services/authentication.service';
+import { LoginService } from '../../core/services/login.service';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
+  selector: 'app-forgot-password',
+  templateUrl: './forgot-password.component.html',
   styleUrl: '../../app.component.scss'
 })
-export class LoginComponent {
-  loginForm!: FormGroup;
+export class ForgotPasswordComponent {
+  forgotForm!: FormGroup;
   constructor(
     private formBuilder: FormBuilder,
     public authService: AuthenticationService,
@@ -18,7 +18,7 @@ export class LoginComponent {
   ) { }
 
   ngOnInit(): void {
-    this.loginForm = this.formBuilder.group
+    this.forgotForm = this.formBuilder.group
       (
         {
           email: ["", Validators.required, Validators.email],
@@ -27,11 +27,11 @@ export class LoginComponent {
       );
   }
 
-  submitLogin() {
-    if (this.loginForm.invalid) {
+  tryLogin() {
+    if (this.forgotForm.invalid) {
       return;
     }
-    const dataLogin = this.loginForm.getRawValue() as LoginModel;
+    const dataLogin = this.forgotForm.getRawValue() as LoginModel;
     // const params = {
     //   "email": "hercules.nakai@42we.tech",
     //   "password": "12345678"
@@ -44,9 +44,5 @@ export class LoginComponent {
     // } else {
     //   this.router.navigate(["/login"]);
     // }
-  }
-
-  goToUrl(): void {
-    window.location.href = "https://www.google.com";
   }
 }

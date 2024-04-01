@@ -1,6 +1,6 @@
 <div class="container">
     <h2>Cadastro</h2>
-    <form action="#" method="post">
+    <form class="content-form" formGroupName="loginForm" (submit)="submitRegister()">
         <div class="form-group">
             <label for="name">Nome completo</label>
             <input type="text" id="name" name="name" required formControlName="name">
@@ -28,8 +28,6 @@
         <div class="form-group">
             <button type="submit">Continuar</button>
         </div>
-        <div class="form-group">
-            <button routerLink="/">Go back</button>
-        </div>
+        <button routerLink="/forgot-password">Esqueci a senha</button>
     </form>
 </div>
